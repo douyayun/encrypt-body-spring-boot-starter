@@ -43,7 +43,7 @@
 
     <developers>
         <developer>
-            <name>houp</name>
+            <name>douyayun</name>
             <email>system@douyayun.cn</email>
             <url>https://www.douyayun.cn</url>
             <timezone>+8</timezone>
@@ -187,85 +187,6 @@
         </pluginManagement>
     </build>
 
-    <!--    <build>-->
-    <!--        <plugins>-->
-    <!--            <plugin>-->
-    <!--                <groupId>org.apache.maven.plugins</groupId>-->
-    <!--                <artifactId>maven-compiler-plugin</artifactId>-->
-    <!--                <version>3.0</version>-->
-    <!--                <configuration>-->
-    <!--                    <encoding>UTF-8</encoding>-->
-    <!--                    <source>${java.version}</source>-->
-    <!--                    <target>${java.version}</target>-->
-    <!--                </configuration>-->
-    <!--            </plugin>-->
-    <!--            <plugin>-->
-    <!--                <groupId>org.apache.maven.plugins</groupId>-->
-    <!--                <artifactId>maven-surefire-plugin</artifactId>-->
-    <!--                <version>2.18.1</version>-->
-    <!--                <configuration>-->
-    <!--                    <skipTests>true</skipTests>-->
-    <!--                </configuration>-->
-    <!--            </plugin>-->
-    <!--            <plugin>-->
-    <!--                <groupId>org.apache.maven.plugins</groupId>-->
-    <!--                <artifactId>maven-source-plugin</artifactId>-->
-    <!--                <version>2.4</version>-->
-    <!--                <configuration>-->
-    <!--                    <attach>true</attach>-->
-    <!--                </configuration>-->
-    <!--                <executions>-->
-    <!--                    <execution>-->
-    <!--                        <phase>package</phase>-->
-    <!--                        <goals>-->
-    <!--                            <goal>jar-no-fork</goal>-->
-    <!--                        </goals>-->
-    <!--                    </execution>-->
-    <!--                </executions>-->
-    <!--            </plugin>-->
-    <!--            <plugin>-->
-    <!--                <groupId>org.apache.maven.plugins</groupId>-->
-    <!--                <artifactId>maven-site-plugin</artifactId>-->
-    <!--                <version>3.7.1</version>-->
-    <!--            </plugin>-->
-    <!--            &lt;!&ndash; Javadoc &ndash;&gt;-->
-    <!--            <plugin>-->
-    <!--                <groupId>org.apache.maven.plugins</groupId>-->
-    <!--                <artifactId>maven-javadoc-plugin</artifactId>-->
-    <!--                <version>3.0.1</version>-->
-    <!--                <configuration>-->
-    <!--                    <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>-->
-    <!--                    <additionalJOptions>-->
-    <!--                        <additionalJOption>-Xdoclint:none</additionalJOption>-->
-    <!--                    </additionalJOptions>-->
-    <!--                </configuration>-->
-    <!--                <executions>-->
-    <!--                    <execution>-->
-    <!--                        <phase>package</phase>-->
-    <!--                        <goals>-->
-    <!--                            <goal>jar</goal>-->
-    <!--                        </goals>-->
-    <!--                    </execution>-->
-    <!--                </executions>-->
-    <!--            </plugin>-->
-    <!--            &lt;!&ndash; Gpg Signature &ndash;&gt;-->
-    <!--            <plugin>-->
-    <!--                <groupId>org.apache.maven.plugins</groupId>-->
-    <!--                <artifactId>maven-gpg-plugin</artifactId>-->
-    <!--                <version>1.6</version>-->
-    <!--                <executions>-->
-    <!--                    <execution>-->
-    <!--                        <id>sign-artifacts</id>-->
-    <!--                        <phase>verify</phase>-->
-    <!--                        <goals>-->
-    <!--                            <goal>sign</goal>-->
-    <!--                        </goals>-->
-    <!--                    </execution>-->
-    <!--                </executions>-->
-    <!--            </plugin>-->
-    <!--        </plugins>-->
-    <!--    </build>-->
-
     <profiles>
         <profile>
             <id>release</id>
@@ -330,12 +251,15 @@
                 <repository>
                     <id>releases</id>
                     <name>snapshots repository</name>
-                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+                    <!--                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>-->
+                    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
                 <snapshotRepository>
                     <id>snapshots</id>
                     <name>Nexus Snapshot Repository</name>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                    <!--                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
+                    <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+
                 </snapshotRepository>
             </distributionManagement>
         </profile>
@@ -345,12 +269,14 @@
         <repository>
             <id>releases</id>
             <name>snapshots repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+            <!--            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>-->
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>Nexus Snapshot Repository</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <!--            <url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
