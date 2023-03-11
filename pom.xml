@@ -36,14 +36,14 @@
     </licenses>
 
     <scm>
-        <connection>https://github.com/houpengvip/encrypt-body-spring-boot-starter.git</connection>
-        <developerConnection>https://github.com/houpengvip/encrypt-body-spring-boot-starter.git</developerConnection>
+        <connection>https://github.com/douyayun/encrypt-body-spring-boot-starter.git</connection>
+        <developerConnection>https://github.com/douyayun/encrypt-body-spring-boot-starter.git</developerConnection>
         <url>https://www.douyayun.cn</url>
     </scm>
 
     <developers>
         <developer>
-            <name>houpengvip</name>
+            <name>houp</name>
             <email>system@douyayun.cn</email>
             <url>https://www.douyayun.cn</url>
             <timezone>+8</timezone>
